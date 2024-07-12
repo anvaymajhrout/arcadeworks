@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="card w-75 p-4">
+            <h1 class="text-center">Travel Planner</h1>
+            <form id="travel-form">
+                <div class="mb-3">
+                    <label for="destination" class="form-label">Destination</label>
+                    <input type="text" class="form-control" id="destination" name="destination" required>
+                </div>
+                <div class="mb-3">
+                    <label for="days" class="form-label">Number of Days</label>
+                    <input type="number" class="form-control" id="days" name="days" required>
+                </div>
+                <div class="mb-3">
+                    <label for="people" class="form-label">Number of People</label>
+                    <input type="number" class="form-control" id="people" name="people" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Generate Plan</button>
+            </form>
+            <div id="travel-plan" class="mt-4"></div>
+            <button id="print-button" class="btn btn-success w-100 mt-3" style="display: none;">Print Plan</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
