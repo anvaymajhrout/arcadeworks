@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Chart Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Chart Viewer</h1>
+        <form id="stockForm">
+            <label for="stockSelect">Choose a stock:</label>
+            <select id="stockSelect" name="stockSelect">
+                <option value="BSE:SENSEX">BSE SENSEX</option>
+                <option value="NSE:NIFTY_50">NIFTY 50</option>
+                <option value="BSE:RELIANCE">Reliance Industries</option>
+                <option value="BSE:TCS">Tata Consultancy Services</option>
+                <option value="BSE:HDFC">HDFC Bank</option>
+                <option value="BSE:HDFCBANK">HDFC</option>
+                <option value="BSE:INFY">Infosys</option>
+                <option value="BSE:ICICIBANK">ICICI Bank</option>
+                <option value="BSE:KOTAKBANK">Kotak Mahindra Bank</option>
+                <option value="BSE:ITC">ITC</option>
+                <option value="BSE:LT">Larsen & Toubro</option>
+                <option value="BSE:BHARTIARTL">Bharti Airtel</option>
+                <option value="BSE:HINDUNILVR">Hindustan Unilever</option>
+                <option value="BSE:SBIN">State Bank of India</option>
+                <option value="BSE:BAJFINANCE">Bajaj Finance</option>
+                <option value="BSE:ASIANPAINT">Asian Paints</option>
+                <option value="BSE:MARUTI">Maruti Suzuki</option>
+                <option value="BSE:AXISBANK">Axis Bank</option>
+                <option value="BSE:ONGC">ONGC</option>
+                <option value="BSE:HCLTECH">HCL Technologies</option>
+            </select>
+            <button type="button" class="btn" onclick="loadChart()">Load Chart</button>
+        </form>
+        <div id="chartContainer" class="chart-container"></div>
+    </div>
+    <script src="https://s3.tradingview.com/tv.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
