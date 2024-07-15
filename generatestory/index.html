@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Story Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Story Generator</h1>
+        <form id="storyForm">
+            <label for="storyType">Choose a story type:</label>
+            <select id="storyType" name="storyType">
+                <option value="fantasy">Fantasy</option>
+                <option value="adventure">Adventure</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+                <option value="horror">Horror</option>
+            </select>
+            <label for="storyPrompt">Enter your story prompt:</label>
+            <textarea id="storyPrompt" name="storyPrompt" rows="4"></textarea>
+            <button type="button" class="btn" onclick="generateStory()">Generate Story</button>
+        </form>
+        <div id="loader" class="loader" style="display:none;"></div>
+        <div id="storyOutput"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
