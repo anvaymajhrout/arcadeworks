@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="input-group">
+            <label for="origin">Origin:</label>
+            <select id="origin" class="dropdown"></select>
+        </div>
+        <div class="input-group">
+            <label for="destination">Destination:</label>
+            <select id="destination" class="dropdown"></select>
+        </div>
+        <div class="input-group">
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" class="date-picker">
+        </div>
+        <div class="input-group">
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" class="date-picker">
+        </div>
+        <button class="button" id="search-button">Search Flights</button>
+    </div>
+    <div class="results-container" id="results-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
