@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="input-group">
+            <label for="ingredients">Ingredients (comma separated):</label>
+            <input type="text" id="ingredients" class="input" placeholder="e.g., apple, banana, flour">
+        </div>
+        <button class="button" id="find-recipes-button">Find Recipes</button>
+    </div>
+    <div class="search-container">
+        <div class="input-group">
+            <label for="recipe-url">Extract Recipe from URL:</label>
+            <input type="text" id="recipe-url" class="input" placeholder="Enter recipe URL">
+        </div>
+        <button class="button" id="extract-recipe-button">Extract Recipe</button>
+    </div>
+    <div class="results-container" id="results-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
