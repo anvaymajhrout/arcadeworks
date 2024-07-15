@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://www.propertyguides.com/italy/media/sites/6/Italy-Augustus.png);
+}
+
+.container {
+    text-align: center;
+    background-image: url(https://cdn.britannica.com/17/193717-050-030D75E3/Julius-Caesar-statue-Rome-Italy.jpg);
+    padding: 50px;
+    border-radius: 10Spx;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: antiquewhite;
+}
+
+#quote {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.Btn-Container {
+    display: flex;
+    width: 200px;
+    height: fit-content;
+    background-color: #1d2129;
+    border-radius: 40px;
+    box-shadow: 0px 5px 10px #bebebe;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 auto;  
+}
+.icon-Container {
+    width: 45px;
+    height: 45px;
+    background-color: #f59aff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #1d2129;
+}
+.text {
+    width: calc(170px - 45px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1.2px;
+}
+.icon-Container svg {
+    transition-duration: 1.5s;
+}
+.Btn-Container:hover .icon-Container svg {
+    transition-duration: 1.5s;
+    animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        margin-left: 0px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 10px;
+    }
+}
