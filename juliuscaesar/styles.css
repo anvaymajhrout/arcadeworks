@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    background: url('https://okdiario.com/img/2017/11/28/william-shakespeare.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #000;
+    background: rgba(116, 115, 115, 0.767);
+    padding: 20px;
+    border: 2px solid #000;
+    color: aliceblue;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 6rem;
+    margin: 20px 0;
+  
+}
+
+.welcome-section {
+    margin: 20px 0;
+}
+
+.welcome-button {
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    padding: 15px 25px;
+    background: linear-gradient(to right, #e63946, #f4a261);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.welcome-button:hover:before {
+    transform: translate(-50%, -50%) translateY(0);
+}
+
+
+
+.acts-list {
+    margin: 20px 0;
+}
+
+.acts-list p {
+    margin: 10px 0;
+    font-size: 2.2rem;
+}
+
+.acts-list button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background: transparent;
+    cursor: pointer;
+}
+
+.acts-list button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    transition: all .7s;
+}
+
+.acts-list button:hover {
+    color: #fff;
+}
+
+.acts-list button:before {
+    top: 100%;
+    left: 100%;
+}
+
+.acts-list button:hover:before {
+    top: -50px;
+    left: -50px;
+}
+
+.acts-list button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
