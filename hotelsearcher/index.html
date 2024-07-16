@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="input-group">
+            <label for="city">City:</label>
+            <select id="city" class="dropdown"></select>
+        </div>
+        <div class="input-group">
+            <label for="checkin-date">Check-in Date:</label>
+            <input type="date" id="checkin-date" class="date-picker">
+        </div>
+        <div class="input-group">
+            <label for="checkout-date">Check-out Date:</label>
+            <input type="date" id="checkout-date" class="date-picker">
+        </div>
+        <div class="input-group">
+            <label for="guests">Guests:</label>
+            <select id="guests" class="dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <button class="button" id="search-button">Search Hotels</button>
+    </div>
+    <div class="results-container" id="results-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
