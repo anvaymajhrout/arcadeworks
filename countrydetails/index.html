@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info Fetcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Country Info Fetcher</h1>
+        <div class="search-container">
+            <input type="text" id="country-search" placeholder="Search for a country...">
+            <div class="suggestions" id="country-suggestions"></div>
+        </div>
+        <button id="fetch-country-details" class="cssbuttons-io-button">
+            Get Country Info
+            <div class="icon">
+                <svg viewBox="0 0 20 20"><path d="M7.5 12.5l5-5-5-5"/></svg>
+            </div>
+        </button>
+        <div id="country-details" class="details" style="display: none;">
+          
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
