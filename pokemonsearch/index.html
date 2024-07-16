@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Details Fetcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Details Fetcher</h1>
+        <div class="search-container">
+            <input type="text" id="pokemon-search" placeholder="Search for a Pokémon...">
+            <div class="suggestions" id="pokemon-suggestions"></div>
+        </div>
+        <button id="fetch-details" class="cssbuttons-io-button">
+            Get Pokémon Details
+            <div class="icon">
+                <svg viewBox="0 0 20 20"><path d="M7.5 12.5l5-5-5-5"/></svg>
+            </div>
+        </button>
+        <div id="pokemon-details" class="details" style="display: none;">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
