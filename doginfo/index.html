@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breed Selector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uiverse/1.0.0/uiverse.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dog Breed Selector</h1>
+        <div class="dropdown">
+            <ul class="menu">
+                <li class="item">
+                    <a href="#" class="link">Select a dog breed</a>
+                    <ul class="submenu" id="breedSelect">
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="dogCard" class="uiverse-card hidden">
+            <img id="dogImage" src="" alt="Dog Image">
+            <div id="dogDetails">
+                <h2 id="dogBreed"></h2>
+                <p id="dogInfo"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
